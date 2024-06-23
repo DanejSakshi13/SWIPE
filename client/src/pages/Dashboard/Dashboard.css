@@ -35,7 +35,8 @@
   border-radius: 30px;
   background-size: cover;
   background-position: center;
-  background: linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 255, 255));
+  /* background: linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 255, 255)); */
+  background-color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -62,8 +63,7 @@
   width: 60%;
 }
 
-.swipe:last-of-type {
-}
+
 
 .users-name {
   font-size: 2.5vw;
@@ -91,8 +91,7 @@
   border-radius: 50px;
   font-size: smaller ;
   &:hover{
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);  
 }
 }
 
@@ -122,7 +121,6 @@
   border-radius: 20px;
   padding-top: 5px;
   cursor: pointer;
-
 }
 
 .icon {
@@ -184,3 +182,43 @@
 
 
 
+@media only screen and (max-width: 600px) {
+  .card{
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+  margin-left: 30px;
+  }
+  .card1 {
+    width: 80px;
+    height: 100px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .user-about-me {
+    margin-top: 1vh;
+    width: 40vw;
+    font-size: 2vw;
+  }
+  .users-name {
+    font-size: 5vw;
+    margin-top: 5vh;
+    width: 40vw;
+    text-align: left;
+  }
+  .user-bio-data {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .skill-button{
+    width: max-content;
+    font-size: x-small;
+  }
+  .user-looking-for{
+    font-size: x-small ;
+    display: none;
+  }
+  
+  
+}

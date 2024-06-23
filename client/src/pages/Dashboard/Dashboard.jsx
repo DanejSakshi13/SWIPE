@@ -114,7 +114,20 @@ const Dashboard = () => {
                           marginTop: "2vh",
                         }}
                       />
-                     <h3 style={{textAlign:"left", margin:"0",padding:"0",fontWeight:"400"}}>SKILLS</h3>
+                      <h3
+                        style={{
+                          textAlign: "left",
+                          margin: "0",
+                          padding: "0",
+                          fontWeight: "400",
+                          fontSize: "1.5rem",
+                          "@media (max-width: 600px)": {
+                            fontSize: "1.2rem"
+                          }
+                        }}
+                      >
+                        SKILLS
+                      </h3>
                       <div
                         className="user-skills-data"
                         style={{ display: "flex", flexWrap: "wrap" }}
@@ -128,12 +141,12 @@ const Dashboard = () => {
                                 style={{
                                   width: `${skill.length * 10}px`,
                                   backgroundColor: "#3d3d3d",
-                                  color :"white",
+                                  color: "white",
                                   margin: "3px",
                                   marginLeft: "-13px",
-                                  marginRight : "1vw",
+                                  marginRight: "1vw",
                                   padding: "5px 0px",
-                                  borderRadius : "200px"
+                                  borderRadius: "200px",
                                 }}
                                 className="skill-button"
                               >
@@ -156,7 +169,9 @@ const Dashboard = () => {
                             />
                           </a>
                         </div>
-                        <div className="user-looking-for">Looking for {user.look_for}</div>
+                        <div className="user-looking-for">
+                          Looking for {user.look_for}
+                        </div>
                       </div>
                     </div>
                   </div>
